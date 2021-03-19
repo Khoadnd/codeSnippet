@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+Node* createNode(${1:\$data} x)
+{
+	Node *p = new Node;
+	p->info = x;
+	p->pNext = NULL;
+	return p;
+}
+]]></content>
+	<tabTrigger>createNode</tabTrigger>
+</snippet>

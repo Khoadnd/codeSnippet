@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+void createList(List &l)
+{
+	l.pHead = NULL;
+	l.pTail = NULL;
+}
+]]></content>
+	<tabTrigger>createList</tabTrigger>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+void xuatList(List l)
+{
+	Node *p = l.pHead;
+	while (p != NULL)
+	{
+		cout << p->info << ' ';
+		p = p->pNext;
+	}
+}
+]]></content>
+	<tabTrigger>xuatList</tabTrigger>
+</snippet>

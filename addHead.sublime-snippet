@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+void addHead(List &l, Node *p)
+{
+	if (l.pHead == NULL)
+	{
+		l.pHead = p;
+		l.pTail = p;
+	}
+	else
+	{
+		p->pNext = l.pHead;
+		l.pHead = p;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>addHead</tabTrigger>
+</snippet>

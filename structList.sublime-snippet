@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+struct List
+{
+	Node *pHead;
+	Node *pTail;
+};
+]]></content>
+	<tabTrigger>List</tabTrigger>
+</snippet>

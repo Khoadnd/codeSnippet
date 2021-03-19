@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+void nhapList(List &l)
+{
+	int x;
+
+	while (1)
+	{
+		cin >> x;
+
+		if (x == 0)
+			break;
+
+		Node *p = createNode(x);
+		${1:\$add...};
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nhapList</tabTrigger>
+</snippet>

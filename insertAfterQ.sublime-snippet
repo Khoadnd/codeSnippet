@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+void insertAfterQ(List &l, Node *p, Node *q)
+{
+	if(l.pHead == NULL)
+	{
+		l.pHead = p;
+		l.pTail = p;
+	}
+	else
+	{
+		p->pNext = q->qNext;
+		q->pNext = p;
+		if (q == l.Tail)
+			l.pTail = p;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>insertAfterQ</tabTrigger>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+void hoanVi(int &x, int &y)
+{
+	int t = x;
+	x = y;
+	y = x;
+}
+
+void sortList(List &l)
+{
+	for (Node *p = l.pHead; p != l.pTail; p = p->pNext)
+	{
+		Node *min = p;
+
+		for (Node *q = l.pHead; q != NULL; q = q->pNext)
+			if (q->info < min->info)
+				min = q;
+
+		hoanVi(p->info, min->info)
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sortList</tabTrigger>
+</snippet>

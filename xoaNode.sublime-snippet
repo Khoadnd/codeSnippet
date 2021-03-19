@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+void xoaNode(List &l, Node *p, Node *bp)
+{
+	if (p == l.pHead)
+	{
+		l.pHead = l.pHead->pNext;
+		delete p;
+	}
+	else
+	{
+		bp->pNext = p->pNext;
+		if (p == l.pTail)
+			l.pTail = bp;
+		delete p;
+	}
+}
+]]></content>
+	<tabTrigger>xoaNode</tabTrigger>
+</snippet>
