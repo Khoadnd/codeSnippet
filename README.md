@@ -1,2 +1,2 @@
 # codeSnippet
- myCodeSnippet
+ My collection of some basic code snippet
